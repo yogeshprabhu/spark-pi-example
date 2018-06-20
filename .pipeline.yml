@@ -1,7 +1,7 @@
 pipeline:
   create_cluster:
     image: banzaicloud/plugin-pipeline-client:0.3.0
-    cluster_name: "pipeline-spark1"
+    cluster_name: "pipeline-controlplane-user1"
     cluster_provider: "google"
     google_project: "thekthw"
     google_gke_version: "1.9"
