@@ -1,7 +1,7 @@
 pipeline:
   create_cluster:
     image: banzaicloud/plugin-pipeline-client:0.3.0
-    cluster_name: "pipeline-cluster-user1"
+    cluster_name: "pipeline4spark"
     cluster_provider: "google"
     google_project: "thekthw"
     google_gke_version: "1.9"
@@ -26,7 +26,7 @@ pipeline:
         enabled: true
      spark-hs:
        app:
-         logDirectory: "gs://pipeline-spark-pi-yog/"
+         logDirectory: "gs://pipeline4spark-hs/"
 
     secrets: [plugin_endpoint, plugin_token]
 
@@ -63,7 +63,7 @@ pipeline:
       spark.kubernetes.authenticate.driver.serviceAccountName: spark
       spark.metrics.conf: /opt/spark/conf/metrics.properties
       spark.eventLog.enabled: "true"
-      spark.eventLog.dir: "gs://pipeline-spark-pi-yog-1/"
+      spark.eventLog.dir: "gs://pipeline4spark-log1/"
     spark_submit_app_args:
       - target/spark-pi-1.0-SNAPSHOT.jar
       - 1000
