@@ -1,7 +1,7 @@
 pipeline:
   create_cluster:
     image: banzaicloud/plugin-pipeline-client:0.3.0
-    cluster_name: "pipeline-cluster-piepai1"
+    cluster_name: "piepeline-cluster-pipeai1"
     cluster_provider: "google"
     google_project: "thekthw"
     google_gke_version: "1.9"
