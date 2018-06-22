@@ -4,6 +4,7 @@ Spark Pi is a sample project to trigger a short lived Spark CI/CD workflow on Ba
 
 ## Prerequisites
 
+
 * Account on one of the following cloud providers: Amazon, Azure, GoogleCloud
 * A Banzai Cloud Control Plane needs to be running and accessible
 * Oauth2 authentication enabled on the Banzai Cloud Control Plane
